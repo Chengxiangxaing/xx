@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id="first"/>
+		<input type="text" id="second"/>
+		<input type="text" id="third" />
+		<button onclick="but()">开始计算</button>
+	</body>
+	<script type="text/javascript">
+//		var arr='12131215'
+//		var arr1=arr.indexOf('郭子')      //索引值从0开始
+//	
+//		 var arr2=arr.replace(/12/g,'')
+//		console.log(arr2)
+function but(){
+	var val1=document.getElementById('first').value;
+	var val2=document.getElementById('second').value;
+	var third=document.getElementById('third')	
+//	console.log(val1)
+	for (var i = 0; i < val1.length; i++) {
+	    	if(val1.indexOf(val2)>-1){
+	    		val1=val1.replace(val2,'')
+	    	}else{break}
+	    }  
+//      val1=val1.replace(/val2/gi,'')
+	third.value=val1
+}
+var split="HTML5 CSS JS PHP"
+var ss=split.split("",5)
+console.log(ss)
+	</script>
+	
+</html>
